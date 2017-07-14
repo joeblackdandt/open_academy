@@ -1,0 +1,16 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "tareq1988/wp-eloquent": "dev-master",
+        "wpackagist-theme/_tk": "*",
+        "wpackagist-plugin/akismet": "*",
+        "wpackagist-plugin/w3-total-cache": "*",
+        "wpackagist-plugin/duplicator": "*",
+        "wpackagist-plugin/wordpress-seo": "*"
+    }
+}
