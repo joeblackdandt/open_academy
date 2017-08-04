@@ -10,3 +10,11 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  breathecode-tk-child
 */
+
+.navbar > .container {
+ padding-bottom: 0;
+}
+
+footer{
+ padding-top: 60px;
+}
