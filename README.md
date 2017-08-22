@@ -3,6 +3,9 @@ This is just an attemp of creating a very simple LMS to play with the creation o
 
 ![Alt text](http://alejandroleon.me/public_imgs/s2.jpg "Sample Screenshot")
 
+## User SignUp
+The user signup is done via AJAX, with the help of the **wpas-wordpress-dash** plugin. Not much validation is done so far.
+
 ## Lessons and Courses
 The way everything is organized is with Lessons as a custom post type and Courses as a taxonomy that only applies to posts of type Lesson. When you create a new Lesson, you can just select to which course(s) it belongs to.
 
