@@ -11,6 +11,8 @@ The way everything is organized is with Lessons as a custom post type and Course
 
 This provides a structure of Lessons grouped in Courses.
 
+![Alt text](http://alejandroleon.me/public_imgs/s3.jpg "Sample Screenshot")
+
 ## Registration for Courses
 Registration or Enrolling in Courses is possible with the creation of a custom Field in the user profile. A list of the available taxonomies of type Course is shown to every user in its profile. A checkbox determines if that user is enrolled in that course.
 
