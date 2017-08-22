@@ -1,4 +1,4 @@
-###Installing Wordpress
+## Installing Wordpress
 
 1) Install WP-CLI by following: 
 > http://wp-cli.org/
@@ -40,8 +40,8 @@
         }
     }
     
-###Installing composer with wordpress
+## Installing composer with wordpress
 https://developer.wordpress.org/cli/commands/
 
-###More plugins
+## More plugins
 https://wpackagist.org/search
