@@ -18,29 +18,35 @@ Roles can be created from the WP CLI
     $ wp role create teacher Teacher
 
 ## Installing Wordpress
-
-1) Install WP-CLI by following: 
+1) Install **WP-CLI** by following: 
     http://wp-cli.org/
 
-2) Download wordpress
-
-    $ wp core download
+2) Download wordpress:
+```
+    $ wp role create student Student
+```
 
 3) Generate DB
+```
     $ wp core config --dbname=c9 --dbuser=username --dbpass={YOUR DATABASE PASSWORD}
+```
 
 4) Create database
-> wp db create
+```
+    wp db create
+```
 
 5) Install wordpress
-> wp core install --url=domain.com --title="First Attempt" --admin_user=adminpassword --admin_password=1234 --admin_email=a@4b.com
+```
+    wp core install --url=domain.com --title="First Attempt" --admin_user=adminpassword --admin_password=1234 --admin_email=a@4b.com
+```
 
 6) Test your wordpress instalation (login)
 
-7) Create the .gitignore
+7) Create the **.gitignore**
 
 8) Install composer
-
+```
     {
         "repositories": [
             {
@@ -57,7 +63,8 @@ Roles can be created from the WP CLI
             "wpackagist-plugin/wordpress-seo": "*"
         }
     }
-    
+```
+
 ## Installing composer with wordpress
 https://developer.wordpress.org/cli/commands/
 
