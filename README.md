@@ -23,10 +23,11 @@ Roles can be created from the WP CLI
     http://wp-cli.org/
 
 2) Download wordpress
+
     wp core download
 
 3) Generate DB
-> wp core config --dbname=c9 --dbuser=username --dbpass={YOUR DATABASE PASSWORD}
+    wp core config --dbname=c9 --dbuser=username --dbpass={YOUR DATABASE PASSWORD}
 
 4) Create database
 > wp db create
