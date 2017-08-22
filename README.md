@@ -11,6 +11,9 @@ Registration or Enrolling in Courses is possible with the creation of a custom F
 
 ## Roles and Capabilities
 Ideally, a custom role for student and teacher should be created, setting the capabilities in a way that only teachers can create courses and lessons. Students shouldnt be able to get into the backend. At the moment this is not done.
+Roles can be created from the WP CLI
+> $ wp role create student Student
+> $ wp role create teacher Teacher
 
 ## Installing Wordpress
 
