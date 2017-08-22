@@ -13,20 +13,31 @@
 
 get_header(); ?>
 
+    <?php 
+    if ( is_user_logged_in() ) {
+        $current_user = wp_get_current_user();
+    }
+    ?>
 
-	<div class="jumbotron text-center">
+    <?php if ( is_user_logged_in() ) { ?>
+    <div class="container-fluid text-center user-banner">
+        <h4>
+            <?php echo "Howdy <strong>" . esc_html( $current_user->user_nicename ) . '</strong>' ?>
+        </h4>
+    </div>
+    <?php } ?>
+
+
+	<div class="jumbotron text-center main-banner <?php echo is_user_logged_in() ? "user-bg" : "home-bg"; ?>">
           
           <?php 
           
             if ( is_user_logged_in() ) {
-               
-                $current_user = wp_get_current_user();
-                echo "<h1>Howdy <strong>" . esc_html( $current_user->user_nicename ) . '</strong></h1><hr/><p><a class="btn btn-success btn-lg" href="'  . get_page_link(26) . '" role="button">MY COURSES</a></p>';
-                echo "<h5>" . get_search_form() . "</h5>";
+                // echo '<p><a class="btn btn-success btn-lg" href="'  . get_page_link(26) . '" role="button">MY COURSES</a></p>';
             } else {
                 ?>
                 
-                <h1 style="padding: 50px 0;">Welcome to Open Academy!</h1>
+                <h1 style="padding: 50px 0;color:white;text-shadow: 0px 0px 40px black;">Welcome to <br><?php bloginfo( 'name' ); ?>!</h1>
                 
                 <?php
             }
@@ -36,7 +47,7 @@ get_header(); ?>
 
 
 
-	<section class="container">
+	<section class="container white-sheet">
             
             
             <div class="row">
@@ -63,9 +74,13 @@ get_header(); ?>
                 
                 // print_r($pages);
                 
+                $icons = array('fa-leaf','fa-flask','fa-book','fa-plane','fa-institution','fa-gamepad','fa-globe','fa-flag-checkered');
+                
                 foreach ($pages as $page) {
                     echo "<div class='col-sm-4 col-xs-12 text-center'>";
                     
+                    $rand = rand(0,7);
+                    echo '<h1><i class="fa fa-3x text-success ' . $icons[$rand] . '"></i></h1>';
                     echo "<h3><a href='" . $page->guid . "'>" . $page->post_title . "</a></h3>";
                     
                     echo "</div>";

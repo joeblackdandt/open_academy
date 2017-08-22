@@ -187,3 +187,23 @@
     
     //hide the admin bar in the front end
     add_filter('show_admin_bar', '__return_false');
+    
+    
+    //change classes in search form
+    function as_adapt_search_form( $form ) {
+        
+        $form = str_replace(
+            'search-form',
+            'search-form navbar-form navbar-right',
+            $form
+        );
+        $form = str_replace(
+            'search-submit',
+            'search-submit btn btn-success',
+            $form
+        );
+        // return the modified string
+        return $form;
+    }
+    // run the search form HTML output through the newly defined filter
+    add_filter( 'get_search_form', 'as_adapt_search_form' );

@@ -7,11 +7,9 @@
 
 get_header(); ?>
 
-<section class = "container">
-	<br>
-	<?php get_search_form(); ?>
+<section class = "container white-sheet">
 	
-	<header>
+	<header style="margin-bottom:30px;">
 		<h2 class="page-title"><?php printf( __( 'Search Results for: %s', '_tk' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 	</header><!-- .page-header -->
 		
@@ -28,7 +26,7 @@ get_header(); ?>
 			// check the result of the query
 			if (count($results)>0) {
 				foreach ($results as $record){
-					echo '<div class="col-xs-12">';
+					echo '<div class="col-xs-12"><div class="panel panel-primary"><div class="panel-body">';
 					echo '<h3><a href="'. get_term_link(intval($record[term_id])) . '">' . $record[name] . '</a></h3>';
 					
 					if (is_user_logged_in()){
@@ -46,7 +44,7 @@ get_header(); ?>
 		            }
 					
 					echo '<p>' . $record[description] . '</p>';
-					echo '</div>';
+					echo '</div></div></div>';
 				}
 			}
 			else {

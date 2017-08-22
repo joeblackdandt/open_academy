@@ -21,10 +21,7 @@ get_header(); ?>
     <?php
     
     if ( is_user_logged_in() ) {
-    
         $enrolled = get_user_meta( wp_get_current_user()->ID, '_enrolled', true );
-        
-        // var_dump($enrolled->length);die();
         
         if (count($enrolled) > 0) { ?>
             

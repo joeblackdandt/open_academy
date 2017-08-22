@@ -11,10 +11,57 @@
  Text Domain:  breathecode-tk-child
 */
 
+body{
+ background-color: #fafafa;
+}
+
+
 .navbar > .container {
  padding-bottom: 0;
 }
 
 footer{
  padding-top: 60px;
+}
+
+.main-banner{
+ height: 50vh;
+ margin-bottom: -30px;
+}
+
+.main-banner.user-bg{
+ background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("assets/imgs/main-banner.jpg") center no-repeat;
+ background-size: cover;
+}
+
+.main-banner.home-bg{
+ background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("assets/imgs/pencils-sm.jpg") center no-repeat;
+ background-size: cover;
+}
+
+.main-banner p{
+ margin-top: calc(50vh - 190px);
+ position: relative;
+}
+
+.user-banner{
+ background: #aeefb9;
+}
+
+
+.white-sheet{
+ box-shadow: 0px 0px 30px -8px grey;
+ background-color: white;
+}
+
+.main-content > .white-sheet:first-child{
+ margin-top: 30px;
+}
+
+.search-form > label{
+ margin-bottom:0;
+}
+
+.panel-body > h3{
+ margin-top: 0;
 }

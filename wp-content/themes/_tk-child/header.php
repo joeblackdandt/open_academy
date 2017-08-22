@@ -54,14 +54,14 @@
 	
 						<!-- The WordPress Menu goes here -->
 						<div class="collapse navbar-collapse">
-							
+						
 						<ul class="nav navbar-nav navbar-right">
 			                  <li><?php wp_loginout(); ?></li>
 			                  <?php if (!is_user_logged_in()) {?>
 			                  <li><a href="<?php echo get_page_link(21)?>">Sign Up</a></li>
 			                  <?php } ?>
-			              </ul>
-		              
+			            </ul>
+			              
 						<?php wp_nav_menu(
 							array(
 								'theme_location' 	=> 'primary',
@@ -75,6 +75,7 @@
 							)
 						); ?>
 						
+						<?php get_search_form(); ?>
 		              
 		              </div>
               

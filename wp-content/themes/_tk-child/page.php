@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-<section class='container'>
+<section class='container white-sheet'>
 	
 	<!--<div class="row">-->
 	<!--	<div class="col-md-8 col-xs-12">-->
